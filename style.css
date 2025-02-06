@@ -1,1 +1,80 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4e6e3;
+}
+
+.navbar-brand {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar-nav .nav-link {
+  font-size: 20px;
+  color: black;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6%;
+}
+
+.text-content {
+  width: 100%;
+  margin-right: 40px;
+  flex: 1;
+  padding: 0%;
+  line-height: normal;
+  max-height: 100%;
+  text-align: right;
+}
+
+.text-content h1 {
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.text-content h3 {
+  font-family: "Abhaya Libre", serif;
+}
+
+.image-content {
+  flex: 1;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.image-content img {
+  width: auto;
+  height: 480px;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; /* Change layout to vertical */
+    padding: 3%; /* Reduce padding for smaller screens */
+  }
+
+  .text-content,
+  .image-content {
+    flex: none; /* Override any previous flex settings */
+    width: 100%; /* Make each div take the full width */
+    margin-right: 0; /* Remove right margin from text-content */
+    margin-left: 0; /* Remove left margin from image-content */
+    text-align: center; /* Center-align the text for better readability */
+  }
+
+  .text-content h1 {
+    font-size: 40px; /* Reduce font size for smaller screens */
+  }
+
+  .image-content img {
+    width: 100%; /* Make the image stretch to fit the container */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+  }
+}
 
