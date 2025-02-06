@@ -80,10 +80,36 @@ body {
   font-size: 50px;
   text-align: center;
   color: #FFFFFF;
+  padding-top: 3%;
+  padding-bottom: 3%;
   font-weight: bold;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
+
+.grid2x2 {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid2x2 > div {
+  display: flex; 
+  flex-basis: calc(50% - 40px);  
+  justify-content: center;
+  flex-direction: column;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box { margin: 20px;}
+.box1 { background-color: white;}
+.box2 { background-color: white; }
+.box3 { background-color: white; }
+.box4 { background-color: white; }
 
 @media (max-width: 768px) {
   .flex-container {
