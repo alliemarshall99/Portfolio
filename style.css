@@ -157,6 +157,72 @@ body {
   margin: 5px 0 0;
 }
 
+/* Skills Section */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+/* Individual Skill Category */
+.skills-category {
+  flex: 1;
+  padding: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* Styling for the Titles */
+.skills-category h3 {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Line Under Titles */
+.skills-category hr {
+  width: 80%;
+  height: 1px;
+  background: black;
+  border: none;
+  margin: 10px auto;
+}
+
+/* List Styling */
+.skills-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-category li {
+  font-size: 24px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  color: black;
+  margin: 5px;
+}
+
+/* Adjust Background Colors for Each Column */
+.technical {
+  background-color: rgba(192, 166, 159, 0.25);
+}
+
+.design {
+  background-color: rgba(192, 166, 159, 0.50);
+}
+
+.leadership {
+  background-color: #E7D6D2;
+}
+
+
+
 
 @media (max-width: 768px) {
   .flex-container {
@@ -201,4 +267,12 @@ body {
       font-size: 16px; /* Slightly smaller description */
   }
 
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skills-category {
+      width: 100%;
+  }
 }
