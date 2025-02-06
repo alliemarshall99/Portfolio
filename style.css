@@ -157,6 +157,7 @@ body {
   margin: 5px 0 0;
 }
 
+
 @media (max-width: 768px) {
   .flex-container {
     flex-direction: column; /* Change layout to vertical */
