@@ -76,6 +76,15 @@ body {
   height: 480px;
 }
 
+.index-subheader {
+  font-size: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
 @media (max-width: 768px) {
   .flex-container {
     flex-direction: column; /* Change layout to vertical */
@@ -99,5 +108,5 @@ body {
     width: 100%; /* Make the image stretch to fit the container */
     height: auto; /* Adjust height automatically to maintain aspect ratio */
   }
-}
 
+}
