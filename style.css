@@ -88,28 +88,74 @@ body {
 }
 
 .grid2x2 {
-  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-}
-.grid2x2 > div {
-  display: flex; 
-  flex-basis: calc(50% - 40px);  
   justify-content: center;
-  flex-direction: column;
-}
-.grid2x2 > div > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  gap: 20px;
+  margin: 0 auto; /* Centering the grid */
+  max-width: 1200px; /* Prevents the grid from stretching too wide */
+  padding: 0 40px; /* Adds left & right padding */
 }
 
-.box { margin: 20px;}
-.box1 { background-color: white;}
-.box2 { background-color: white; }
-.box3 { background-color: white; }
-.box4 { background-color: white; }
+/* Each Project Box */
+.box {
+  flex: 1 1 calc(50% - 20px); /* Two per row */
+  background: white;
+  border: 1px solid black;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: none;
+}
+
+.box:hover .project-info {
+  background-color: #C0A69F !important; 
+}
+
+.box:hover .project-info h3,
+.box:hover .project-info p {
+    color: white !important; /* Turns text white */
+}
+
+/* Clickable Project Link */
+.project-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Project Image */
+.project-link img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid black;
+}
+
+/* Project Info Box */
+.project-info {
+  padding: 15px;
+  background: white;
+}
+
+/* Title Styling */
+.project-info h3 {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Description Styling */
+.project-info p {
+  font-size: 20px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
 
 @media (max-width: 768px) {
   .flex-container {
@@ -133,6 +179,25 @@ body {
   .image-content img {
     width: 100%; /* Make the image stretch to fit the container */
     height: auto; /* Adjust height automatically to maintain aspect ratio */
+  }
+
+    .box {
+      flex: 1 1 100%; /* Stacks boxes vertically */
+      margin: 10px 0; /* Reduces spacing for smaller screens */
+  }
+
+  /* Reduce padding inside the grid */
+  .grid2x2 {
+      padding: 0 20px; /* Less side padding */
+  }
+
+  /* Adjust font sizes for readability */
+  .project-info h3 {
+      font-size: 20px; /* Slightly smaller title */
+  }
+
+  .project-info p {
+      font-size: 16px; /* Slightly smaller description */
   }
 
 }
