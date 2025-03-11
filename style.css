@@ -19,7 +19,6 @@ body {
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:focus {
   color: #C0A69F !important;
-  font-weight: 600;
 }
 
 
@@ -222,6 +221,166 @@ body {
 }
 
 
+
+
+/* Contact Page Layout */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  gap: 30px;
+}
+
+/* Contact Left (Text Side) */
+.contact-left {
+  flex: 1;
+  max-width: 40%;
+}
+
+.contact-left h1 {
+  color:#FFFFFF;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: lowercase;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-bottom: 10px;
+}
+
+.contact-left p {
+  font-size: 18px;
+}
+
+/* Contact Right (Form Side) */
+.contact-right {
+  flex: 1;
+  max-width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.required {
+  color: #c0a69f;
+}
+
+/* Input Fields */
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  background: white;
+  font-size: 16px;
+}
+
+/* Button */
+button {
+  background-color: #c0a69f;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #a5867a;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 5%;
+}
+
+.resume-left {
+  flex: 2;
+}
+
+.resume-left h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #C0A69F;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.resume-right {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+h1.resume-name {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.job-date {
+  float: right;
+  color: #c0a69f;
+}
+
+.contact-box, .education-box {
+  margin-top: 20px;
+}
+
+.contact-box h2, .education-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.resume-container ul {
+  padding-left: 20px;
+  font-family: "Abhaya Libre", serif; /* Ensure correct font */
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.resume-container ul li {
+  margin-bottom: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .contact-left, .contact-right {
+      max-width: 100%;
+  }
+
+  .name-fields {
+      flex-direction: column;
+  }
+}
 
 
 @media (max-width: 768px) {
