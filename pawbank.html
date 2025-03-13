@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawBank</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-dark px-md-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">ALLIE SHUMWAY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="projects.html">View All Projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full-Width Hero Image -->
+    <section class="hero-image">
+        <img src="assets/pawbank img.png" alt="PawBank Hero Image">
+    </section>
+
+    <!-- Project Title in Pink Strip -->
+    <section class="title-strip">
+        <h1 class="project-title">PAWBANK</h1>
+    </section>
+
+    <!-- Project Details & Content -->
+    <div class="project-container">
+        <!-- Left: Details -->
+        <div class="project-details">
+            <h2>Project Details</h2>
+            <div>
+                <p><strong>Category:</strong> </p>
+                <p>Class Assignment</p>
+             </div>
+            <p><strong>Role:</strong> </p>
+            <p>Project Lead, UX Designer</p>
+            <p><strong>Team Size:</strong> </p> 
+            <p>4 team members</p>
+            <p><strong>Timeline:</strong> </p> 
+            <p>2 weeks</p>
+            <p><strong>Date:</strong> </p> 
+            <p>February, 2024</p>
+            <p><strong>Tools:</strong></p>
+            <p>Figma, Adobe Illustrator</p>
+        </div>
+
+        <!-- Right: Background, Problem, Solution -->
+        <div class="project-content">
+            <h2 id="background">background</h2>
+            <p>Details about the background of the project...</p>
+
+            <h2 id="problem">the problem</h2>
+            <p>Details about the problem...</p>
+
+            <h2 id="solution">solution</h2>
+            <p>Details about the solution...</p>
+        </div>
+    </div>
+
+    <!-- Section Navigation Strip -->
+    <section class="nav-strip">
+        <div class="nav-circle" onclick="scrollToSection('explore')">explore</div>
+        <span class="arrow">→</span>
+        <div class="nav-circle" onclick="scrollToSection('research')">research</div>
+        <span class="arrow">→</span>
+        <div class="nav-circle" onclick="scrollToSection('analysis')">analysis</div>
+        <span class="arrow">→</span>
+        <div class="nav-circle" onclick="scrollToSection('design')">design</div>
+        <span class="arrow">→</span>
+        <div class="nav-circle" onclick="scrollToSection('test')">test</div>
+    </section>
+
+    <!-- Sections -->
+    <section id="explore" class="project-section"><h2>explore</h2></section>
+    <section id="research" class="project-section"><h2>research</h2></section>
+    <section id="analysis" class="project-section"><h2>analysis</h2></section>
+    <section id="design" class="project-section"><h2>design</h2></section>
+    <section id="test" class="project-section"><h2>test</h2></section>
+
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</body>
+
+<footer class="bg-link">
+    <div class="container p-4">
+    </div>
+    <div class="text-left p-4" style="background-color: white; border-top: 1px solid black; font-weight: bold;">
+      ALLIE SHUMWAY
+    </div>
+    <div class="text-center p-3" style="background-color: white;">
+      © 2025 Copyright
+      <a href="https://allieshumway.com/" style="color: #C0A69F;">allieshumway.com</a>
+    </div>
+  </footer>
+
+</html>
